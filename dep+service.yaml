@@ -45,3 +45,6 @@ What’s Happening Internally
 Pod → Pull image from ECR
 Service → Creates AWS LoadBalancer (ELB / NLB)
 ELB → Routes traffic to Pods
+
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 650781539051.dkr.ecr.us-east-1.amazonaws.com/my-app
+
